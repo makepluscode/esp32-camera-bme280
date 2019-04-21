@@ -9,7 +9,7 @@
 
 #define ENABLE_SSD1306
 #define SOFTAP_MODE       //The comment will be connected to the specified ssid
-#define ENABLE_BME280
+//#define ENABLE_BME280
 
 #define WIFI_SSID   "your wifi ssid"
 #define WIFI_PASSWD "you wifi password"
