@@ -160,7 +160,12 @@ void setup()
     config.xclk_freq_hz = 20000000;
     config.pixel_format = PIXFORMAT_JPEG;
     //init with high specs to pre-allocate larger buffers
+#ifdef FRAMEBUFFER_ALLOC_ERROR
     config.frame_size = FRAMESIZE_UXGA;
+#else
+    config.frame_size = FRAMESIZE_CIF;
+#endif
+
     config.jpeg_quality = 10;
     config.fb_count = 2;
 
